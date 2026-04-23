@@ -22,7 +22,7 @@ if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
 target_metadata = Base.metadata
-
+print(Base.metadata.tables.keys())
 
 def run_migrations_offline():
     url = settings.DATABASE_URL
